@@ -16,8 +16,7 @@ The libraries used during development of FoodApp are listed in below:<br />
 <br />
 1- Navigation Component (to navigate between fragments)<br />
 2- Intuit ssp/sdp       (to have flexibility for different screen sizes)<br />
-3- Retrofit2            (to make http requests)<br />!
-
+3- Retrofit2            (to make http requests)<br />
 4- Glide                (to load images from internet)<br />
 5- ViewModel lifecycle    <br />
 6- Hilt                 (for dependency injection)<br />
