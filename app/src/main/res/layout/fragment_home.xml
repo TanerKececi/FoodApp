@@ -41,7 +41,7 @@
                     android:textAlignment="center"
                     android:layout_marginStart="@dimen/_20sdp"
                     android:text="Home"
-                    android:textColor="@color/white"
+                    android:textColor="@color/black"
                     android:textSize="@dimen/_25ssp"
                     android:textStyle="bold" />
 
@@ -59,7 +59,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_10sdp"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:text="What would like to eat"
                 android:textSize="@dimen/_20ssp"
                 android:textStyle="bold"

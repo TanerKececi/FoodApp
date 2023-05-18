@@ -7,7 +7,8 @@
     tools:context=".fragments.bottomsheet.MealBottomSheetFragment"
     android:id="@+id/bottomSheet"
     android:background="@drawable/rounded_top_shape"
-    android:backgroundTint="@color/light_yellow">
+    android:backgroundTint="@color/light_yellow"
+    android:paddingHorizontal="10dp">
 
     <ImageView
         android:id="@+id/img_bottom_sheet"

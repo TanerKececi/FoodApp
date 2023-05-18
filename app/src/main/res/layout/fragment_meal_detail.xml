@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".fragments.MealDetailFragment"
-    android:background="@color/slight_white">
+    android:background="@color/white">
 
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/appBar"
@@ -47,7 +47,7 @@
         app:shapeAppearance="@style/Widget.Material3.CircularProgressIndicator"
         app:backgroundTint="@color/accent"
         app:tint="@color/white"
-        app:layout_anchor="@id/appBar"
+        app:layout_anchor="@id/collapsingToolbar"
         app:layout_anchorGravity="bottom|end"
         android:layout_marginEnd="@dimen/_2sdp" />
 
@@ -61,14 +61,17 @@
             android:layout_height="match_parent"
             android:layout_marginBottom="@dimen/_40sdp">
 
-            <LinearLayout
+            <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/linearLayout"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:layout_marginStart="@dimen/_5sdp"
                 android:layout_marginEnd="@dimen/_5sdp"
                 android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginBottom="10dp"
+                android:padding="7dp"
+                android:background="@drawable/background_horizonta_rounded_corner"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent">
@@ -79,10 +82,13 @@
                     android:layout_height="wrap_content"
                     android:text="Category: Beef"
                     android:textStyle="bold"
-                    android:textColor="@color/g_black"
+                    android:textColor="@color/black"
+                    android:layout_marginStart="20dp"
                     android:drawableLeft="@drawable/ic_categories"
-                    android:drawableTint="@color/g_black"
-                    android:layout_weight="1"/>
+                    android:drawableTint="@color/black"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
 
                 <TextView
                     android:id="@+id/areaTv"
@@ -90,12 +96,16 @@
                     android:layout_height="wrap_content"
                     android:text="Area: Turkey"
                     android:textStyle="bold"
-                    android:textColor="@color/g_black"
+                    android:textColor="@color/black"
+                    android:layout_marginHorizontal="20dp"
                     android:drawableLeft="@drawable/ic_area"
-                    android:drawableTint="@color/g_black"
-                    android:layout_weight="1"/>
+                    android:drawableTint="@color/black"
+                    app:layout_constraintStart_toEndOf="@id/categoryTv"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
 
-            </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
 
             <TextView
@@ -106,7 +116,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/linearLayout"
                 android:layout_marginTop="@dimen/_10sdp"
-                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginStart="@dimen/_10sdp"
                 android:textStyle="bold"
                 android:textColor="@color/black"
                 android:textSize="@dimen/_15ssp"/>
@@ -120,7 +130,8 @@
                 app:layout_constraintTop_toBottomOf="@id/instructionsHeader"
                 app:layout_constraintEnd_toEndOf="parent"
                 android:layout_marginTop="@dimen/_2sdp"
-                android:layout_marginHorizontal="@dimen/_5sdp"
+                android:paddingBottom="50dp"
+                android:layout_marginHorizontal="@dimen/_10sdp"
                 android:textColor="@color/black"/>
 
         </androidx.constraintlayout.widget.ConstraintLayout>

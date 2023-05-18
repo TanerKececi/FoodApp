@@ -14,7 +14,7 @@
         android:textAlignment="center"
         android:text="Favorites"
         android:textSize="@dimen/_20sdp"
-        android:textColor="@color/g_black"
+        android:textColor="@color/black"
         android:background="@drawable/background_oval"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

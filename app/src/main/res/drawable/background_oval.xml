@@ -4,7 +4,7 @@
     android:shape="rectangle">
 
     <solid
-        android:color="@color/dark_yellow"/>
+        android:color="@color/middle_yellow"/>
 
     <corners android:bottomLeftRadius="25dp" android:bottomRightRadius="25dp"/> <!-- The value here should specify How much ovally you want shape be -->
 </shape>
